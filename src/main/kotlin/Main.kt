@@ -1,3 +1,4 @@
 fun main(args: Array<String>) {
-    println("hi")
+    val c4 = Pitch(PitchClass(PitchLetter.C), 4)
+    println(c4)
 }
