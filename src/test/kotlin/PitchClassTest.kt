@@ -60,7 +60,7 @@ class PitchClassTest {
     }
 
     @Test
-    fun `transpose eb down to f#`() {
+    fun `transpose eb down (yes, down) to f#`() {
         val eFlat = PitchClass(PitchLetter.E, Accidental(-1))
 
         val result = eFlat.transpose(Interval(-6, -9))
@@ -82,6 +82,15 @@ class PitchClassTest {
         val result = bDoubleSharp.transpose(Interval(1, -1))
 
         Assert.assertEquals(c(), result)
+    }
+
+    @Test
+    fun `transpose gb down to eb`() {
+        val gb = PitchClass(PitchLetter.G, Accidental(-1))
+
+        val result = gb.transpose(Interval(-2, -3))
+
+        Assert.assertEquals(PitchClass(PitchLetter.E, Accidental(-1)), result)
     }
 
     @Test

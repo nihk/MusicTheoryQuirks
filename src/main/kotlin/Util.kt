@@ -1,4 +1,5 @@
 import kotlin.math.min
+import kotlin.math.sign
 
 fun Int.modulo(universe: Int): Int {
     var n = this
@@ -12,6 +13,12 @@ fun Int.modulo(universe: Int): Int {
 fun Int.mod12() = modulo(PITCH_CLASS_UNIVERSE_SIZE)
 
 const val PITCH_CLASS_UNIVERSE_SIZE = 12
+
+fun Int.isNegative() =
+        sign == -1
+
+fun Int.isPositive() =
+        sign == 1
 
 fun shortestDistance(from: Int, to: Int, universe: Int) =
     min(

@@ -16,7 +16,7 @@ data class PitchClass(
     fun transpose(interval: Interval): PitchClass {
         val newPitchLetter = pitchLetter.transpose(interval.letterDistance)
         val accModifier = shortestDistanceDirectional(newPitchLetter.value,
-            value() + interval.integerDistance, PITCH_CLASS_UNIVERSE_SIZE)
+            (value() + interval.integerDistance).mod12(), PITCH_CLASS_UNIVERSE_SIZE)
 
         return PitchClass(newPitchLetter, Accidental(accModifier))
     }
