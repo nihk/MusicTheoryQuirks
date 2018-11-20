@@ -1,7 +1,10 @@
-data class Interval(
-    val letterDistance: Int,
-    val integerDistance: Int
+class Interval(
+    letterDistance: Int,
+    integerDistance: Int
 ) {
 
-    operator fun unaryMinus(): Interval = copy(letterDistance = -letterDistance, integerDistance = -integerDistance)
+    val letterDistance = letterDistance.modulo(PitchLetter.values().size)
+    val integerDistance = integerDistance.mod12()
+
+    operator fun unaryMinus(): Interval = Interval(letterDistance = -letterDistance, integerDistance = -integerDistance)
 }

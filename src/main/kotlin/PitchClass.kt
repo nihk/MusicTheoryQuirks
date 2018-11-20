@@ -11,13 +11,13 @@ data class PitchClass(
 
     operator fun dec() = copy(accidental = accidental - 1)
 
-    fun value() = pitchLetter.value + accidental.modifier
+    fun value() = (pitchLetter.value + accidental.modifier).mod12()
 
     fun transpose(interval: Interval): PitchClass {
         val newPitchLetter = pitchLetter.transpose(interval.letterDistance)
-        val modIntegerDistance = (interval.integerDistance + Constants.UNIVERSE) % Constants.UNIVERSE
-        val accidentalModifier = value() + modIntegerDistance - newPitchLetter.value
-        val newAccidental = Accidental(accidentalModifier)
-        return PitchClass(newPitchLetter, newAccidental)
+        val accModifier = shortestDistanceDirectional(newPitchLetter.value,
+            value() + interval.integerDistance, PITCH_CLASS_UNIVERSE_SIZE)
+
+        return PitchClass(newPitchLetter, Accidental(accModifier))
     }
 }

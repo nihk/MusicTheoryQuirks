@@ -25,10 +25,36 @@ class PitchClassTest {
     }
 
     @Test
-    fun `transpose c# to fb`() {
-        val cSharp = PitchClass(PitchLetter.C, Accidental(1))
+    fun `transpose c# down to g`() {
+        val g = cSharp().transpose(Interval(-3, -6))
 
-        val result = cSharp.transpose(Interval(3, 3))
+        Assert.assertEquals(PitchClass(PitchLetter.G, Accidental(0)), g)
+    }
+
+    @Test
+    fun `transpose c# down to f#`() {
+        val fSharp = cSharp().transpose(Interval(-4, -7))
+
+        Assert.assertEquals(PitchClass(PitchLetter.F, Accidental(1)), fSharp)
+    }
+
+    @Test
+    fun `transpose c# down to gb`() {
+        val gFlat = cSharp().transpose(Interval(-3, -7))
+
+        Assert.assertEquals(PitchClass(PitchLetter.G, Accidental(-1)), gFlat)
+    }
+
+    @Test
+    fun `transpose c# down to eb`() {
+        val eFlat = cSharp().transpose(Interval(-5, -10))
+
+        Assert.assertEquals(PitchClass(PitchLetter.E, Accidental(-1)), eFlat)
+    }
+
+    @Test
+    fun `transpose c# to fb`() {
+        val result = cSharp().transpose(Interval(3, 3))
 
         Assert.assertEquals(PitchClass(PitchLetter.F, Accidental(-1)), result)
     }
@@ -47,6 +73,15 @@ class PitchClassTest {
         val bDoubleSharp = c().transpose(Interval(-1, 1))
 
         Assert.assertEquals(PitchClass(PitchLetter.B, Accidental(2)), bDoubleSharp)
+    }
+
+    @Test
+    fun `transpose b## up to c`() {
+        val bDoubleSharp = PitchClass(PitchLetter.B, Accidental(2))
+
+        val result = bDoubleSharp.transpose(Interval(1, -1))
+
+        Assert.assertEquals(c(), result)
     }
 
     @Test
@@ -70,5 +105,13 @@ class PitchClassTest {
         Assert.assertEquals(7, fDoubleSharp.value())
     }
 
+    @Test
+    fun `value b##`() {
+        val bDoubleSharp = PitchClass(PitchLetter.B, Accidental(2))
+
+        Assert.assertEquals(1, bDoubleSharp.value())
+    }
+
     private fun c() = PitchClass(PitchLetter.C)
+    private fun cSharp() = PitchClass(PitchLetter.C, Accidental(1))
 }

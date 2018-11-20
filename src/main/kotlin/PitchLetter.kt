@@ -4,12 +4,8 @@ enum class PitchLetter(val value: Int) {
     operator fun plus(letterDistance: Int) = transpose(letterDistance)
 
     fun transpose(letterDistance: Int): PitchLetter = with(values()) {
-        val positiveDistance = (letterDistance + size) % size
-        val key = (ordinal + positiveDistance) % size
+        val modLetterDistance = letterDistance.modulo(size)
+        val key = (ordinal + modLetterDistance) % size
         return get(key)
     }
-
-    // TODO: Remove this
-    fun addValue(value: Int) =
-        (this.value + value) % Constants.UNIVERSE
 }
