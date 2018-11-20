@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59dd09c7-9b20-467f-8de3-f4f78699718c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/PitchTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Interval.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Interval.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Pitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Pitch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/PitchClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/PitchClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/UtilKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/UtilKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/PitchClassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/PitchClassTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Interval.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Interval.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pitch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Pitch.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/PitchClass.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/PitchClass.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Util.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/PitchClassTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/PitchClassTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/PitchTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/PitchTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/UtilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/UtilTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -45,26 +37,26 @@
         <counts>
           <entry key="gradle" value="1" />
           <entry key="java" value="8" />
-          <entry key="kt" value="29" />
+          <entry key="kt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
           <entry key="JAVA" value="8" />
-          <entry key="Kotlin" value="29" />
+          <entry key="Kotlin" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="6" />
-          <entry key="kt" value="12302" />
+          <entry key="kt" value="13566" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="6" />
-          <entry key="Kotlin" value="12302" />
+          <entry key="Kotlin" value="13566" />
         </counts>
       </usages-collector>
     </session>
@@ -85,8 +77,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/kotlin/Interval.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" selection-start-line="1" selection-end-line="1" />
+                <state>
+                  <caret column="14" selection-start-column="14" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -94,8 +86,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/kotlin/Pitch.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="93" lean-forward="true" selection-start-line="12" selection-start-column="93" selection-end-line="12" selection-end-column="93" />
+                <state relative-caret-position="360">
+                  <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
                 </state>
               </provider>
             </entry>
@@ -112,22 +104,10 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/kotlin/Util.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
                   <folding>
                     <element signature="e#0#46#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/kotlin/UtilTest.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="680">
-                  <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#0#45#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -145,8 +125,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/kotlin/PitchClass.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" selection-start-line="17" selection-end-line="17" />
+                <state relative-caret-position="225">
+                  <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -154,8 +134,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/kotlin/PitchLetter.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="11" selection-start-column="11" selection-end-column="11" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -179,8 +159,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/kotlin/PitchTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1005">
-                  <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+                <state relative-caret-position="570">
+                  <caret line="121" selection-start-line="121" selection-end-line="121" />
                 </state>
               </provider>
             </entry>
@@ -199,6 +179,18 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="225">
                   <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/kotlin/UtilTest.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="455">
+                  <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#0#45#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -593,13 +585,13 @@
         <option value="$PROJECT_DIR$/src/test/kotlin/PitchLetterTest.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/PitchLetter.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Extensions.kt" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/UtilTest.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Interval.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Accidental.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/PitchClassTest.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/PitchClass.kt" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/PitchTest.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/UtilTest.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Util.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/PitchTest.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Pitch.kt" />
       </list>
     </option>
@@ -673,7 +665,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542740255884" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542743313181" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/kotlin" />
@@ -713,6 +705,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PitchTest.transpose b#3 up to cbbb4 negative letterDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MusicTheoryQuirks_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PitchTest" />
+      <option name="METHOD_NAME" value="transpose b#3 up to cbbb4 negative letterDistance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PitchTest.transpose c5 up to c#6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MusicTheoryQuirks_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -723,31 +725,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PitchTest.transpose c#4 down to b###3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PitchTest.transpose c#4 down to b###3 positive letterDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MusicTheoryQuirks_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PitchTest" />
-      <option name="METHOD_NAME" value="transpose c#4 down to b###3" />
+      <option name="METHOD_NAME" value="transpose c#4 down to b###3 positive letterDistance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PitchTest.transpose d4 to d4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PitchTest.transpose fb4 down to g2 positive letterDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MusicTheoryQuirks_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PitchTest" />
-      <option name="METHOD_NAME" value="transpose d4 to d4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PitchTest.transpose f#5 down to f#2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MusicTheoryQuirks_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PitchTest" />
-      <option name="METHOD_NAME" value="transpose f#5 down to f#2" />
+      <option name="METHOD_NAME" value="transpose fb4 down to g2 positive letterDistance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -755,18 +747,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.PitchTest" />
+      <item itemvalue="JUnit.PitchTest.transpose c#4 down to b###3 positive letterDistance" />
+      <item itemvalue="JUnit.PitchTest.transpose fb4 down to g2 positive letterDistance" />
+      <item itemvalue="JUnit.PitchTest.transpose b#3 up to cbbb4 negative letterDistance" />
       <item itemvalue="JUnit.PitchTest.transpose c5 up to c#6" />
-      <item itemvalue="JUnit.PitchTest.transpose d4 to d4" />
-      <item itemvalue="JUnit.PitchTest.transpose c#4 down to b###3" />
-      <item itemvalue="JUnit.PitchTest.transpose f#5 down to f#2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PitchTest" />
-        <item itemvalue="JUnit.PitchTest.transpose f#5 down to f#2" />
-        <item itemvalue="JUnit.PitchTest.transpose c#4 down to b###3" />
-        <item itemvalue="JUnit.PitchTest.transpose d4 to d4" />
+        <item itemvalue="JUnit.PitchTest.transpose b#3 up to cbbb4 negative letterDistance" />
         <item itemvalue="JUnit.PitchTest.transpose c5 up to c#6" />
+        <item itemvalue="JUnit.PitchTest.transpose fb4 down to g2 positive letterDistance" />
+        <item itemvalue="JUnit.PitchTest.transpose c#4 down to b###3 positive letterDistance" />
       </list>
     </recent_temporary>
   </component>
@@ -783,44 +775,44 @@
       <workItem from="1542581116625" duration="1792000" />
       <workItem from="1542639688220" duration="16338000" />
       <workItem from="1542726027061" duration="342000" />
-      <workItem from="1542732390200" duration="4702000" />
+      <workItem from="1542732390200" duration="7805000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PitchClassTest - 2018.11.20 at 13h 40m 04s.xml">
-      <configuration name="PitchClassTest" configurationId="JUnit" />
+    <history-entry file="PitchTest_transpose_fb4_down_to_g2_positive_letterDistance - 2018.11.20 at 14h 31m 27s.xml">
+      <configuration name="PitchTest.transpose fb4 down to g2 positive letterDistance" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PitchTest - 2018.11.20 at 13h 40m 18s.xml">
+    <history-entry file="PitchTest - 2018.11.20 at 14h 31m 31s.xml">
       <configuration name="PitchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PitchTest_transpose_d#3_down_to_bb2 - 2018.11.20 at 13h 42m 05s.xml">
-      <configuration name="PitchTest.transpose d#3 down to bb2" configurationId="JUnit" />
+    <history-entry file="PitchTest - 2018.11.20 at 14h 32m 02s.xml">
+      <configuration name="PitchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PitchTest_transpose_c5_up_to_c#6 - 2018.11.20 at 13h 43m 51s.xml">
+    <history-entry file="PitchTest - 2018.11.20 at 14h 33m 26s.xml">
+      <configuration name="PitchTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PitchTest_transpose_b#3_up_to_cbbb4_negative_letterDistance - 2018.11.20 at 14h 44m 18s.xml">
+      <configuration name="PitchTest.transpose b#3 up to cbbb4 negative letterDistance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PitchTest - 2018.11.20 at 14h 44m 23s.xml">
+      <configuration name="PitchTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PitchTest_transpose_c5_up_to_c#6 - 2018.11.20 at 14h 46m 12s.xml">
       <configuration name="PitchTest.transpose c5 up to c#6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PitchTest - 2018.11.20 at 13h 45m 54s.xml">
+    <history-entry file="PitchTest - 2018.11.20 at 14h 46m 16s.xml">
       <configuration name="PitchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PitchTest_transpose_d4_to_d4 - 2018.11.20 at 13h 47m 20s.xml">
-      <configuration name="PitchTest.transpose d4 to d4" configurationId="JUnit" />
+    <history-entry file="PitchTest - 2018.11.20 at 14h 46m 26s.xml">
+      <configuration name="PitchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PitchTest_transpose_c#4_down_to_b###3 - 2018.11.20 at 13h 48m 49s.xml">
-      <configuration name="PitchTest.transpose c#4 down to b###3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PitchTest_transpose_f#5_down_to_f#2 - 2018.11.20 at 13h 50m 15s.xml">
-      <configuration name="PitchTest.transpose f#5 down to f#2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PitchTest_transpose_f#5_down_to_f#2 - 2018.11.20 at 13h 53m 47s.xml">
-      <configuration name="PitchTest.transpose f#5 down to f#2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PitchTest - 2018.11.20 at 13h 53m 52s.xml">
+    <history-entry file="PitchTest - 2018.11.20 at 14h 46m 34s.xml">
       <configuration name="PitchTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23174000" />
+    <option name="totallyTimeSpent" value="26277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1347" extended-state="0" />
@@ -835,8 +827,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22483766" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22483766" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -879,11 +871,42 @@
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Pitch.kt</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>pitchClass.value() + interval.integerDistance</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pitchClass.value()</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>octave</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pitchClass.value() - interval.integerDistance</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>interval.integerDistance.isNegative()</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>interval.integerDistance / PITCH_CLASS_UNIVERSE_SIZE</expression-string>
         <language-id>kotlin</language-id>
@@ -901,31 +924,6 @@
       </expression>
       <expression>
         <expression-string>interval.integerDistance</expression-string>
-        <language-id>kotlin</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>interval.integerDistance.rem(PITCH_CLASS_UNIVERSE_SIZE)</expression-string>
-        <language-id>kotlin</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pitchClass.value()</expression-string>
-        <language-id>kotlin</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>interval.le</expression-string>
-        <language-id>kotlin</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>interval.letterDistance.isNegative()</expression-string>
-        <language-id>kotlin</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>(value() + interval.integerDistance).mod12()</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1008,27 +1006,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/UtilTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/AccidentalSign.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/PitchLetter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1058,39 +1039,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/PitchClass.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="225">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Interval.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/PitchLetter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/UtilTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/Util.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="330">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Pitch.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Interval.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="93" lean-forward="true" selection-start-line="12" selection-start-column="93" selection-end-line="12" selection-end-column="93" />
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/PitchTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+        <state relative-caret-position="570">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Pitch.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>

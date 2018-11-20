@@ -53,10 +53,20 @@ class PitchTest {
     }
 
     @Test
-    fun `transpose c#4 down to b###3`() {
+    fun `transpose c#4 down to b###3 negative letterDistance`() {
         val cSharp4 = Pitch(PitchClass(PitchLetter.C, Accidental(1)), 4)
 
         val result = cSharp4.transpose(Interval(-1, 1))
+
+        val expected = Pitch(PitchClass(PitchLetter.B, Accidental(3)), 3)
+        Assert.assertEquals(expected, result)
+    }
+
+    @Test
+    fun `transpose c#4 down to b###3 positive letterDistance`() {
+        val cSharp4 = Pitch(PitchClass(PitchLetter.C, Accidental(1)), 4)
+
+        val result = cSharp4.transpose(Interval(6, 1))
 
         val expected = Pitch(PitchClass(PitchLetter.B, Accidental(3)), 3)
         Assert.assertEquals(expected, result)
@@ -69,6 +79,46 @@ class PitchTest {
         val result = fSharp5.transpose(Interval(0, -36))
 
         val expected = Pitch(PitchClass(PitchLetter.F, Accidental(1)), 2)
+        Assert.assertEquals(expected, result)
+    }
+
+    @Test
+    fun `transpose fb4 down to g2 negative letterDistance`() {
+        val fFlat4 = Pitch(PitchClass(PitchLetter.F, Accidental(-1)), 4)
+
+        val result = fFlat4.transpose(Interval(-6, -21))
+
+        val expected = Pitch(PitchClass(PitchLetter.G), 2)
+        Assert.assertEquals(expected, result)
+    }
+
+    @Test
+    fun `transpose fb4 down to g2 positive letterDistance`() {
+        val fFlat4 = Pitch(PitchClass(PitchLetter.F, Accidental(-1)), 4)
+
+        val result = fFlat4.transpose(Interval(1, -21))
+
+        val expected = Pitch(PitchClass(PitchLetter.G), 2)
+        Assert.assertEquals(expected, result)
+    }
+
+    @Test
+    fun `transpose b#3 up to cbbb4 positive letterDistance`() {
+        val bSharp3 = Pitch(PitchClass(PitchLetter.B, Accidental(1)), 3)
+
+        val result = bSharp3.transpose(Interval(1, -3))
+
+        val expected = Pitch(PitchClass(PitchLetter.C, Accidental(-3)), 4)
+        Assert.assertEquals(expected, result)
+    }
+
+    @Test
+    fun `transpose b#3 up to cbbb4 negative letterDistance`() {
+        val bSharp3 = Pitch(PitchClass(PitchLetter.B, Accidental(1)), 3)
+
+        val result = bSharp3.transpose(Interval(-6, -3))
+
+        val expected = Pitch(PitchClass(PitchLetter.C, Accidental(-3)), 4)
         Assert.assertEquals(expected, result)
     }
 }
