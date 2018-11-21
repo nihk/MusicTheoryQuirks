@@ -12,4 +12,9 @@ class PitchLetterTest {
     fun `transpose beyond the length of the last pitch letter enum`() {
         assertEquals(PitchLetter.B, PitchLetter.E.transpose(4))
     }
+
+    @Test
+    fun `transpose with negative value`() {
+        assertEquals(PitchLetter.B, PitchLetter.C.transpose(-1))
+    }
 }

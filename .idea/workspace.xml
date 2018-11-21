@@ -689,7 +689,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542824033603" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542824227189" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/kotlin" />
@@ -720,21 +720,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PitchTest">
-    <configuration name="PitchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PitchLetterTest.transpose with negative value">
+    <configuration name="All in MusicTheoryQuirks_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MusicTheoryQuirks_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PitchTest" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PitchTest.transpose b#3 up to cbbb4 letterDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PitchLetterTest.transpose with negative value" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MusicTheoryQuirks_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PitchLetterTest" />
+      <option name="METHOD_NAME" value="transpose with negative value" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PitchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MusicTheoryQuirks_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PitchTest" />
-      <option name="METHOD_NAME" value="transpose b#3 up to cbbb4 letterDistance" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -744,16 +752,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PitchTest" />
       <option name="METHOD_NAME" value="transpose c4 down to c2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PitchTest.transpose dbbbb4 down to b3 letterDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MusicTheoryQuirks_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PitchTest" />
-      <option name="METHOD_NAME" value="transpose dbbbb4 down to b3 letterDistance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -771,18 +769,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.PitchTest" />
-      <item itemvalue="JUnit.PitchTest.transpose b#3 up to cbbb4 letterDistance" />
-      <item itemvalue="JUnit.PitchTest.transpose dbbbb4 down to b3 letterDistance" />
       <item itemvalue="JUnit.PitchTest.transpose f#5 down to f#2" />
       <item itemvalue="JUnit.PitchTest.transpose c4 down to c2" />
+      <item itemvalue="JUnit.All in MusicTheoryQuirks_test" />
+      <item itemvalue="JUnit.PitchLetterTest.transpose with negative value" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PitchLetterTest.transpose with negative value" />
+        <item itemvalue="JUnit.All in MusicTheoryQuirks_test" />
         <item itemvalue="JUnit.PitchTest" />
         <item itemvalue="JUnit.PitchTest.transpose c4 down to c2" />
         <item itemvalue="JUnit.PitchTest.transpose f#5 down to f#2" />
-        <item itemvalue="JUnit.PitchTest.transpose b#3 up to cbbb4 letterDistance" />
-        <item itemvalue="JUnit.PitchTest.transpose dbbbb4 down to b3 letterDistance" />
       </list>
     </recent_temporary>
   </component>
