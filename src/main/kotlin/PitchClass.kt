@@ -3,14 +3,6 @@ data class PitchClass(
     val accidental: Accidental = Accidental(0)
 ) {
 
-    operator fun plus(interval: Interval) = transpose(interval)
-
-    operator fun minus(interval: Interval) = transpose(-interval)
-
-    operator fun inc() = copy(accidental = accidental + 1)
-
-    operator fun dec() = copy(accidental = accidental - 1)
-
     fun integerValue() = (pitchLetter.integerValue + accidental.modifier).mod12()
 
     fun transpose(interval: Interval): PitchClass {
