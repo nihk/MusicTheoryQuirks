@@ -6,31 +6,24 @@ data class Pitch(
     operator fun plus(interval: Interval) = transpose(interval)
 
     fun transpose(interval: Interval): Pitch {
-        val newPc = pitchClass.transpose(interval)
-        val reconciledLetterDistance = if (
-            interval.letterDistance.isPositive() && interval.integerDistance.isNegative()
-            ||
-            interval.letterDistance.isNegative() && interval.integerDistance.isPositive()
-        ) {
-            interval.letterDistance.invertDirectionModulo(PitchLetter.values().size)
-        } else {
-            interval.letterDistance
-        }
+        val from = pitchClass
+        val to = from.transpose(interval)
 
-//        val newOctave = when {
-//            pitchClass.value() + interval.integerDistance < PitchLetter.C.value -> octave - 1
-//            pitchClass.value() + interval.integerDistance > PitchLetter.B.value -> octave + 1
-//            else -> octave
-//        } //+ interval.integerDistance / PITCH_CLASS_UNIVERSE_SIZE
+        val normalizedIntegerDistance =
+            from.accidental.modifier - to.accidental.modifier + interval.integerDistance
+
+        val isEvenlyDivisible = normalizedIntegerDistance.rem(PITCH_CLASS_UNIVERSE_SIZE) == 0
 
         val newOctave = when {
-            interval.integerDistance.isNegative() &&
-                    pitchClass.value() - newPc.value() < PitchLetter.C.value -> octave - 1
-            interval.integerDistance.isPositive() &&
-                    pitchClass.value() + newPc.value() > PitchLetter.B.value -> octave + 1
+            normalizedIntegerDistance.isNegative()
+                    && !isEvenlyDivisible
+                    && from.pitchLetter.integerValue - to.pitchLetter.integerValue <= PitchLetter.C.integerValue -> octave - 1
+            normalizedIntegerDistance.isPositive()
+                    && !isEvenlyDivisible
+                    && from.pitchLetter.integerValue + to.pitchLetter.integerValue >= PitchLetter.B.integerValue -> octave + 1
             else -> octave
-        } + interval.integerDistance / PITCH_CLASS_UNIVERSE_SIZE
+        } + normalizedIntegerDistance / PITCH_CLASS_UNIVERSE_SIZE
 
-        return Pitch(newPc, newOctave)
+        return Pitch(to, newOctave)
     }
 }
