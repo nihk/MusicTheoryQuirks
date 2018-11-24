@@ -1,13 +1,13 @@
 fun main(args: Array<String>) {
-    val c4 = Pitch(PitchClass(PitchLetter.C), 4)
+    val pitch = Pitch(PitchClass(PitchLetter.C), 4)
 
-    println(c4.toScale(Interval.majorScale))
-    println(c4.toScale(Interval.minorScale))
-    println(c4.toScale(Interval.majorPentatonicScale))
-    println(c4.toScale(Interval.minorPentatonicScale))
-    println(c4.toScale(Interval.wholeToneScale))
-    println(c4.toScale(Interval.chromaticScale))
-    println(c4.toScale(Interval.majorOctatonicScale))
-    println(c4.toScale(Interval.minorOctatonicScale))
-    println(c4.toScale(Interval.circleOfFifths))
+    println(pitch.toScale(Interval.majorScale))
+    println(pitch.toScale(Interval.minorScale))
+    println(pitch.toScale(Interval.majorPentatonicScale))
+    println(pitch.toScale(Interval.minorPentatonicScale))
+    println(pitch.toScale(Interval.wholeToneScale))
+    println(pitch.toScale(Interval.chromaticScale))
+    println(pitch.toScale(Interval.majorOctatonicScale))
+    println(pitch.toScale(Interval.minorOctatonicScale))
+    println(pitch.toScale(Interval.circleOfFifths))
 }
