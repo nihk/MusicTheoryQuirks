@@ -211,4 +211,24 @@ class PitchTest {
         val expected = Pitch(PitchClass(PitchLetter.D, Accidental(-4)), 4)
         Assert.assertEquals(expected, result)
     }
+
+    @Test
+    fun `transpose g5 up to a5`() {
+        val g5 = Pitch(PitchClass(PitchLetter.G), 5)
+
+        val result = g5.transpose(Interval(1, 2))
+
+        val expected = Pitch(PitchClass(PitchLetter.A), 5)
+        Assert.assertEquals(expected, result)
+    }
+
+    @Test
+    fun `transpose bb4 up to b4`() {
+        val bFlat4 = Pitch(PitchClass(PitchLetter.B, Accidental(-1)), 4)
+
+        val result = bFlat4.transpose(Interval(0, 1))
+
+        val expected = Pitch(PitchClass(PitchLetter.B), 4)
+        Assert.assertEquals(expected, result)
+    }
 }

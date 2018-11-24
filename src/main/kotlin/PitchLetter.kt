@@ -4,7 +4,7 @@ enum class PitchLetter(val integerValue: Int) {
     fun transpose(letterDistance: Int): PitchLetter =
         with(values()) {
             val modLetterDistance = letterDistance.modulo(size)
-            val key = (ordinal + modLetterDistance) % size
+            val key = (ordinal + modLetterDistance).modulo(size)
             return get(key)
         }
 }

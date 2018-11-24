@@ -15,13 +15,17 @@ data class Pitch(
         val toOctave = when {
             normalizedIntegerDistance.isNegative()
                     && !isEvenlyDivisible
-                    && fromPc.pitchLetter.integerValue - toPc.pitchLetter.integerValue <= PitchLetter.C.integerValue -> octave - 1
+                    && fromPc.pitchLetter.integerValue + normalizedIntegerDistance <= PitchLetter.C.integerValue -> octave - 1
             normalizedIntegerDistance.isPositive()
                     && !isEvenlyDivisible
-                    && fromPc.pitchLetter.integerValue + toPc.pitchLetter.integerValue >= PitchLetter.B.integerValue -> octave + 1
+                    && fromPc.pitchLetter.integerValue + normalizedIntegerDistance >= PitchLetter.B.integerValue -> octave + 1
             else -> octave
         } + normalizedIntegerDistance / PITCH_CLASS_UNIVERSE_SIZE
 
         return Pitch(toPc, toOctave)
+    }
+
+    override fun toString(): String {
+        return pitchClass.toString() + octave
     }
 }
