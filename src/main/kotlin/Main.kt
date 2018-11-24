@@ -9,4 +9,5 @@ fun main(args: Array<String>) {
     println(c4.toScale(Interval.chromaticScale))
     println(c4.toScale(Interval.majorOctatonicScale))
     println(c4.toScale(Interval.minorOctatonicScale))
+    println(c4.toScale(Interval.circleOfFifths))
 }

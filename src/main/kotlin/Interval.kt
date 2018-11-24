@@ -2,6 +2,9 @@ data class Interval(
     val letterDistance: Int,
     val integerDistance: Int
 ) {
+
+    operator fun unaryMinus() = copy(-letterDistance, -integerDistance)
+
     companion object {
         val unison = Interval(0, 0)
         val semitone = Interval(0, 1)
@@ -28,5 +31,7 @@ data class Interval(
             semitone, minor2nd, minor2nd, semitone)
         val majorOctatonicScale = listOf(major2nd, minor2nd, major2nd, minor2nd, major2nd, semitone, major2nd)
         val minorOctatonicScale = listOf(minor2nd, major2nd, semitone, major2nd, minor2nd, major2nd, minor2nd)
+        val circleOfFifths = listOf(perfect5th, -perfect4th, perfect5th, -perfect4th, perfect5th, -perfect4th,
+            perfect5th, -perfect4th, perfect5th, -perfect4th, perfect5th)
     }
 }
