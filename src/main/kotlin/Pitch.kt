@@ -15,10 +15,10 @@ data class Pitch(
         val toOctave = when {
             normalizedIntegerDistance.isNegative()
                     && !isEvenlyDivisible
-                    && appliedNormalizedIntegerDistance <= PitchLetter.C.integerValue -> octave - 1
+                    && appliedNormalizedIntegerDistance < PitchLetter.C.integerValue -> octave - 1
             normalizedIntegerDistance.isPositive()
                     && !isEvenlyDivisible
-                    && appliedNormalizedIntegerDistance >= PitchLetter.B.integerValue -> octave + 1
+                    && appliedNormalizedIntegerDistance > PitchLetter.B.integerValue -> octave + 1
             else -> octave
         } + normalizedIntegerDistance / PITCH_CLASS_UNIVERSE_SIZE
 

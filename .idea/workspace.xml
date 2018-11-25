@@ -646,7 +646,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543144007769" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543144143515" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/kotlin" />
@@ -677,7 +677,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="JUnit.All in MusicTheoryQuirks_test">
     <configuration name="All in MusicTheoryQuirks_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MusicTheoryQuirks_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -736,8 +736,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="JUnit.All in MusicTheoryQuirks_test" />
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="JUnit.PitchTest.transpose bb4 up to b4" />
         <item itemvalue="JUnit.PitchTest" />
         <item itemvalue="JUnit.PitchTest.transpose dbbbb4 down to b3 negative letterDistance" />
