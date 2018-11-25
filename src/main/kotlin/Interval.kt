@@ -22,13 +22,13 @@ data class Interval(
         val major7th = Interval(6, 11)
         val octave = Interval(0, 12)
 
-        val majorScale = listOf(major2nd, major2nd, minor2nd, major2nd, major2nd, major2nd, minor2nd)
-        val minorScale = listOf(major2nd, minor2nd, major2nd, major2nd, minor2nd, major2nd, major2nd)
+        val majorScale = listOf(major2nd, major2nd, minor2nd, major2nd, major2nd, major2nd)
+        val naturalMinorScale = listOf(major2nd, minor2nd, major2nd, major2nd, minor2nd, major2nd)
         val majorPentatonicScale = listOf(major2nd, major2nd, minor3rd, major2nd)
         val minorPentatonicScale = listOf(minor3rd, major2nd, major2nd, minor3rd)
         val wholeToneScale = listOf(major2nd, major2nd, major2nd, major2nd, major2nd)
-        val chromaticScale = listOf(minor2nd, semitone, minor2nd, semitone, minor2nd, semitone, minor2nd,
-            semitone, minor2nd, minor2nd, semitone)
+        val chromaticScale = listOf(semitone, minor2nd, minor2nd, semitone, minor2nd, semitone, minor2nd,
+            minor2nd, semitone, minor2nd, semitone)
         val majorOctatonicScale = listOf(major2nd, minor2nd, major2nd, minor2nd, major2nd, semitone, major2nd)
         val minorOctatonicScale = listOf(minor2nd, major2nd, semitone, major2nd, minor2nd, major2nd, minor2nd)
         val circleOfFifths = listOf(perfect5th, -perfect4th, perfect5th, -perfect4th, perfect5th, -perfect4th,

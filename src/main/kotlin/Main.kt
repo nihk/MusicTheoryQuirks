@@ -1,15 +1,16 @@
 fun main(args: Array<String>) {
-    val pitch = Pitch(PitchClass(PitchLetter.C), 4)
+    val c4 = Pitch(PitchClass(PitchLetter.C), 4)
 
-    println(pitch.toCollection(Interval.majorScale))
-    println(pitch.toCollection(Interval.minorScale))
-    println(pitch.toCollection(Interval.majorPentatonicScale))
-    println(pitch.toCollection(Interval.minorPentatonicScale))
-    println(pitch.toCollection(Interval.wholeToneScale))
-    println(pitch.toCollection(Interval.chromaticScale))
-    println(pitch.toCollection(Interval.majorOctatonicScale))
-    println(pitch.toCollection(Interval.minorOctatonicScale))
-    println(pitch.toCollection(Interval.circleOfFifths))
-    println(pitch.toCollection(Interval.majorTriad))
-    println(pitch.toCollection(Interval.minorTriad))
+    c4.toCollection(Interval.chromaticScale).forEach { pitch ->
+        println("majorScale:           ${pitch.toCollection(Interval.majorScale)}")
+        println("naturalMinorScale:    ${pitch.toCollection(Interval.naturalMinorScale)}")
+        println("majorPentatonicScale: ${pitch.toCollection(Interval.majorPentatonicScale)}")
+        println("minorPentatonicScale: ${pitch.toCollection(Interval.minorPentatonicScale)}")
+        println("wholeToneScale:       ${pitch.toCollection(Interval.wholeToneScale)}")
+        println("majorOctatonicScale:  ${pitch.toCollection(Interval.majorOctatonicScale)}")
+        println("minorOctatonicScale:  ${pitch.toCollection(Interval.minorOctatonicScale)}")
+        println("circleOfFifths:       ${pitch.toCollection(Interval.circleOfFifths)}")
+        println("majorTriad:           ${pitch.toCollection(Interval.majorTriad)}")
+        println("minorTriad:           ${pitch.toCollection(Interval.minorTriad)}\n")
+    }
 }
