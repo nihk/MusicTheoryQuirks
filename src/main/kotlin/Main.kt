@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
-    val pitch = Pitch(PitchClass(PitchLetter.C), 4)
+    val pitch = Pitch(PitchClass(PitchLetter.C, Accidental(-1)), 3)
 
     println(pitch.toCollection(Interval.majorScale))
     println(pitch.toCollection(Interval.minorScale))

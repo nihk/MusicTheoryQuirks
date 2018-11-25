@@ -1,9 +1,9 @@
 data class Pitch(
     val pitchClass: PitchClass,
     val octave: Int
-) {
+) : Transposable<Pitch> {
 
-    fun transpose(interval: Interval): Pitch {
+    override fun transpose(interval: Interval): Pitch {
         val fromPc = pitchClass
         val toPc = fromPc.transpose(interval)
 
@@ -23,17 +23,6 @@ data class Pitch(
         } + normalizedIntegerDistance / PITCH_CLASS_UNIVERSE_SIZE
 
         return Pitch(toPc, toOctave)
-    }
-
-    fun toCollection(intervals: List<Interval>): List<Pitch> {
-        val collection = mutableListOf(this)
-
-        intervals.fold(this) { pitch, interval ->
-            pitch.transpose(interval)
-                .also { collection.add(it) }
-        }
-
-        return collection
     }
 
     override fun toString() = "$pitchClass$octave"

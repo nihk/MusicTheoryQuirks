@@ -34,7 +34,9 @@ data class Interval(
         val circleOfFifths = listOf(perfect5th, -perfect4th, perfect5th, -perfect4th, perfect5th, -perfect4th,
             perfect5th, -perfect4th, perfect5th, -perfect4th, perfect5th)
 
-        val majorTriad = listOf(major3rd, minor3rd)
+        val diminishedTriad = listOf(minor3rd, minor3rd)
         val minorTriad = listOf(minor3rd, major3rd)
+        val majorTriad = listOf(major3rd, minor3rd)
+        val augmentedTriad = listOf(major3rd, major3rd)
     }
 }

@@ -1,9 +1,12 @@
-enum class PitchLetter(val integerValue: Int) {
+enum class PitchLetter(
+    val integerValue: Int
+) : Transposable<PitchLetter> {
+
     A(9), B(11), C(0), D(2), E(4), F(5), G(7);
 
-    fun transpose(letterDistance: Int): PitchLetter =
+    override fun transpose(interval: Interval): PitchLetter =
         with(values()) {
-            val modLetterDistance = letterDistance.modulo(size)
+            val modLetterDistance = interval.letterDistance.modulo(size)
             val key = (ordinal + modLetterDistance).modulo(size)
             return get(key)
         }

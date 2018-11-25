@@ -1,12 +1,12 @@
 data class PitchClass(
     val pitchLetter: PitchLetter,
     val accidental: Accidental = Accidental(0)
-) {
+) : Transposable<PitchClass> {
 
     fun integerValue() = pitchLetter.integerValue.plus(accidental.modifier).mod12()
 
-    fun transpose(interval: Interval): PitchClass {
-        val newPitchLetter = pitchLetter.transpose(interval.letterDistance)
+    override fun transpose(interval: Interval): PitchClass {
+        val newPitchLetter = pitchLetter.transpose(interval)
         val newAccidental = shortestDistanceDirectional(
             from = newPitchLetter.integerValue,
             to = integerValue().plus(interval.integerDistance).mod12(),
