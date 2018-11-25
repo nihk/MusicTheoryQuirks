@@ -24,8 +24,8 @@ data class Interval(
 
         val majorScale = listOf(major2nd, major2nd, minor2nd, major2nd, major2nd, major2nd, minor2nd)
         val minorScale = listOf(major2nd, minor2nd, major2nd, major2nd, minor2nd, major2nd, major2nd)
-        val majorPentatonicScale = listOf(major2nd, major2nd, minor3rd, major2nd, minor3rd)
-        val minorPentatonicScale = listOf(minor3rd, major2nd, major2nd, minor3rd, major2nd)
+        val majorPentatonicScale = listOf(major2nd, major2nd, minor3rd, major2nd)
+        val minorPentatonicScale = listOf(minor3rd, major2nd, major2nd, minor3rd)
         val wholeToneScale = listOf(major2nd, major2nd, major2nd, major2nd, major2nd)
         val chromaticScale = listOf(minor2nd, semitone, minor2nd, semitone, minor2nd, semitone, minor2nd,
             semitone, minor2nd, minor2nd, semitone)

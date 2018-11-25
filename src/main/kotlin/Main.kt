@@ -12,6 +12,4 @@ fun main(args: Array<String>) {
     println(pitch.toCollection(Interval.circleOfFifths))
     println(pitch.toCollection(Interval.majorTriad))
     println(pitch.toCollection(Interval.minorTriad))
-
-    // TODO: Generate all frequencies using groupByTo
 }
