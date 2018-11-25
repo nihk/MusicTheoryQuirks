@@ -33,5 +33,8 @@ data class Interval(
         val minorOctatonicScale = listOf(minor2nd, major2nd, semitone, major2nd, minor2nd, major2nd, minor2nd)
         val circleOfFifths = listOf(perfect5th, -perfect4th, perfect5th, -perfect4th, perfect5th, -perfect4th,
             perfect5th, -perfect4th, perfect5th, -perfect4th, perfect5th)
+
+        val majorTriad = listOf(major3rd, minor3rd)
+        val minorTriad = listOf(minor3rd, major3rd)
     }
 }

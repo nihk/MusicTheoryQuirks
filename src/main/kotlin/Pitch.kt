@@ -25,15 +25,15 @@ data class Pitch(
         return Pitch(toPc, toOctave)
     }
 
-    fun toScale(intervals: List<Interval>): List<Pitch> {
-        val scale = mutableListOf(this)
+    fun toCollection(intervals: List<Interval>): List<Pitch> {
+        val collection = mutableListOf(this)
 
         intervals.fold(this) { pitch, interval ->
             pitch.transpose(interval)
-                .also { scale.add(it) }
+                .also { collection.add(it) }
         }
 
-        return scale
+        return collection
     }
 
     override fun toString() = "$pitchClass$octave"
