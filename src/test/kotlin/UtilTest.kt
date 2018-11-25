@@ -58,40 +58,4 @@ class UtilTest {
 
         Assert.assertEquals(-1, result)
     }
-
-    @Test
-    fun `invert direction neg to pos`() {
-        val n = -5
-
-        val result = n.invertDirectionModulo(PITCH_CLASS_UNIVERSE_SIZE)
-
-        Assert.assertEquals(7, result)
-    }
-
-    @Test
-    fun `invert direction big neg to pos`() {
-        val n = -17
-
-        val result = n.invertDirectionModulo(PITCH_CLASS_UNIVERSE_SIZE)
-
-        Assert.assertEquals(7, result)
-    }
-
-    @Test
-    fun `invert direction pos to neg`() {
-        val n = 5
-
-        val result = n.invertDirectionModulo(PITCH_CLASS_UNIVERSE_SIZE)
-
-        Assert.assertEquals(-7, result)
-    }
-
-    @Test
-    fun `invert direction big pos to neg`() {
-        val n = 17
-
-        val result = n.invertDirectionModulo(PITCH_CLASS_UNIVERSE_SIZE)
-
-        Assert.assertEquals(-7, result)
-    }
 }

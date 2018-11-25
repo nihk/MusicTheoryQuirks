@@ -20,16 +20,6 @@ fun Int.isNegative() =
 fun Int.isPositive() =
         sign == 1
 
-fun Int.invertDirectionModulo(universe: Int): Int {
-    var result = this
-    if (this < 0) {
-        while (result < 0) result += universe
-    } else {
-        while (result > 0) result -= universe
-    }
-    return result
-}
-
 fun shortestDistance(from: Int, to: Int, universe: Int) =
     min(
         (from - to).modulo(universe),

@@ -9,7 +9,7 @@ data class PitchClass(
         val newPitchLetter = pitchLetter.transpose(interval)
         val newAccidental = shortestDistanceDirectional(
             from = newPitchLetter.integerValue,
-            to = integerValue().plus(interval.integerDistance).mod12(),
+            to = this.integerValue().plus(interval.integerDistance).mod12(),
             universe = PITCH_CLASS_UNIVERSE_SIZE
         )
 

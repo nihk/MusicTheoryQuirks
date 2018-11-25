@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
-    val pitch = Pitch(PitchClass(PitchLetter.C), 3)
+    val pitch = Pitch(PitchClass(PitchLetter.C), 4)
 
     println(pitch.toCollection(Interval.majorScale))
     println(pitch.toCollection(Interval.minorScale))
@@ -12,4 +12,6 @@ fun main(args: Array<String>) {
     println(pitch.toCollection(Interval.circleOfFifths))
     println(pitch.toCollection(Interval.majorTriad))
     println(pitch.toCollection(Interval.minorTriad))
+
+    // TODO: Generate all frequencies using groupByTo
 }

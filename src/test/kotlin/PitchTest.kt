@@ -233,7 +233,7 @@ class PitchTest {
     }
 
     @Test
-    fun `c4 up to c5`() {
+    fun `transpose c4 up to c5`() {
         val c4 = Pitch(PitchClass(PitchLetter.C), 4)
 
         val result = c4.transpose(Interval(0, 12))
