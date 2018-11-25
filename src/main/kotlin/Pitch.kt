@@ -1,7 +1,7 @@
 data class Pitch(
     val pitchClass: PitchClass,
     val octave: Int
-) : Transposable<Pitch> {
+) : Transposable {
 
     override fun transpose(interval: Interval): Pitch {
         val fromPc = pitchClass

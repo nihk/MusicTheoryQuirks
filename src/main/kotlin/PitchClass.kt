@@ -1,7 +1,7 @@
 data class PitchClass(
     val pitchLetter: PitchLetter,
     val accidental: Accidental = Accidental(0)
-) : Transposable<PitchClass> {
+) : Transposable {
 
     fun integerValue() = pitchLetter.integerValue.plus(accidental.modifier).mod12()
 

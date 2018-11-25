@@ -44,14 +44,3 @@ fun shortestDistanceDirectional(from: Int, to: Int, universe: Int) =
             it
         }
     }
-
-fun <T> Transposable<T>.toCollection(intervals: List<Interval>): List<Transposable<T>> {
-    val collection = mutableListOf(this)
-
-    intervals.fold(this) { transposable, interval ->
-        transposable.transpose(interval)
-            .also { collection.add(it) }
-    }
-
-    return collection
-}
