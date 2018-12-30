@@ -11,7 +11,8 @@ enum class PitchLetter(
             return get(key)
         }
 
-    fun next() = transpose(Interval(1, 0))
-
-    fun previous() = transpose(Interval(-1, 0))
+    fun integerDistance(other: PitchLetter, direction: Direction) = when (direction) {
+        Direction.Ascending -> other.integerValue - this.integerValue
+        Direction.Descending -> this.integerValue - other.integerValue
+    }.mod12() * direction.sign
 }

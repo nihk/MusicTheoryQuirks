@@ -267,34 +267,6 @@ class PitchClassTest {
         Assert.assertEquals(expected, result)
     }
 
-    @Test
-    fun `integerValue c#`() {
-        val cSharp = PitchClass(PitchLetter.C, Accidental(1))
-
-        Assert.assertEquals(1, cSharp.integerValue())
-    }
-
-    @Test
-    fun `integerValue dbb`() {
-        val dDoubleFlat = PitchClass(PitchLetter.D, Accidental(-2))
-
-        Assert.assertEquals(0, dDoubleFlat.integerValue())
-    }
-
-    @Test
-    fun `integerValue f##`() {
-        val fDoubleSharp = PitchClass(PitchLetter.F, Accidental(2))
-
-        Assert.assertEquals(7, fDoubleSharp.integerValue())
-    }
-
-    @Test
-    fun `integerValue b##`() {
-        val bDoubleSharp = PitchClass(PitchLetter.B, Accidental(2))
-
-        Assert.assertEquals(1, bDoubleSharp.integerValue())
-    }
-
     private fun c() = PitchClass(PitchLetter.C)
     private fun cSharp() = PitchClass(PitchLetter.C, Accidental(1))
 }

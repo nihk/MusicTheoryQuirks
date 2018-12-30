@@ -13,10 +13,10 @@ data class Pitch(
         val isEvenlyDivisible = normalizedIntegerDistance.rem(PITCH_CLASS_UNIVERSE_SIZE) == 0
 
         val toOctave = when {
-            normalizedIntegerDistance.isNegative()
+            normalizedIntegerDistance < 0
                     && !isEvenlyDivisible
                     && appliedNormalizedIntegerDistance < PitchLetter.C.integerValue -> octave - 1
-            normalizedIntegerDistance.isPositive()
+            normalizedIntegerDistance >= 0
                     && !isEvenlyDivisible
                     && appliedNormalizedIntegerDistance > PitchLetter.B.integerValue -> octave + 1
             else -> octave

@@ -1,9 +1,14 @@
+/**
+ * Instances should be treated as if they were to be used in a pitch space. That is, both *Distance fields are
+ * directional. A letter distance of 1 therefore implies ascending by a letter, and a letter distance of -1 implies
+ * descending by a letter.
+ */
 data class Interval(
-    val letterDistance: Int,  // Directional
-    val integerDistance: Int  // Directional
+    val letterDistance: Int,
+    val integerDistance: Int
 ) {
 
-    operator fun unaryMinus() = copy(-letterDistance, -integerDistance)
+    operator fun unaryMinus() = copy(letterDistance = -letterDistance, integerDistance = -integerDistance)
 
     companion object {
         val unison = Interval(0, 0)

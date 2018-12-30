@@ -19,12 +19,32 @@ class PitchLetterTest {
     }
 
     @Test
-    fun `previous to C`() {
-        assertEquals(PitchLetter.B, PitchLetter.C.previous())
+    fun `distance G to F descending`() {
+        assertEquals(-2, PitchLetter.G.integerDistance(PitchLetter.F, Direction.Descending))
     }
 
     @Test
-    fun `next to B`() {
-        assertEquals(PitchLetter.C, PitchLetter.B.next())
+    fun `distance G to F ascending`() {
+        assertEquals(10, PitchLetter.G.integerDistance(PitchLetter.F, Direction.Ascending))
+    }
+
+    @Test
+    fun `distance B to C descending`() {
+        assertEquals(-11, PitchLetter.B.integerDistance(PitchLetter.C, Direction.Descending))
+    }
+
+    @Test
+    fun `distance B to C ascending`() {
+        assertEquals(1, PitchLetter.B.integerDistance(PitchLetter.C, Direction.Ascending))
+    }
+
+    @Test
+    fun `distance C to B descending`() {
+        assertEquals(-1, PitchLetter.C.integerDistance(PitchLetter.B, Direction.Descending))
+    }
+
+    @Test
+    fun `distance C to B ascending`() {
+        assertEquals(11, PitchLetter.C.integerDistance(PitchLetter.B, Direction.Ascending))
     }
 }
