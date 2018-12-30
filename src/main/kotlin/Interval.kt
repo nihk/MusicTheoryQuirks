@@ -1,6 +1,6 @@
 data class Interval(
-    val letterDistance: Int,
-    val integerDistance: Int
+    val letterDistance: Int,  // Directional
+    val integerDistance: Int  // Directional
 ) {
 
     operator fun unaryMinus() = copy(-letterDistance, -integerDistance)

@@ -1,3 +1,4 @@
+import kotlin.math.abs
 import kotlin.math.min
 import kotlin.math.sign
 
@@ -22,13 +23,13 @@ fun Int.isPositive() =
 
 fun shortestDistance(from: Int, to: Int, universe: Int) =
     min(
-        (from - to).modulo(universe),
-        (to - from).modulo(universe)
+        from.minus(to).modulo(universe),
+        to.minus(from).modulo(universe)
     )
 
 fun shortestDistanceDirectional(from: Int, to: Int, universe: Int) =
     shortestDistance(from, to, universe).let {
-        if ((from - it).modulo(universe) == to) {
+        if (from.minus(it).modulo(universe) == to) {
             -it
         } else {
             it

@@ -17,4 +17,14 @@ class PitchLetterTest {
     fun `transpose with negative value`() {
         assertEquals(PitchLetter.B, PitchLetter.C.transpose(Interval(-1, 0)))
     }
+
+    @Test
+    fun `previous to C`() {
+        assertEquals(PitchLetter.B, PitchLetter.C.previous())
+    }
+
+    @Test
+    fun `next to B`() {
+        assertEquals(PitchLetter.C, PitchLetter.B.next())
+    }
 }

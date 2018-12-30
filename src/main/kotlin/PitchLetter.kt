@@ -10,4 +10,8 @@ enum class PitchLetter(
             val key = (ordinal + modLetterDistance).modulo(size)
             return get(key)
         }
+
+    fun next() = transpose(Interval(1, 0))
+
+    fun previous() = transpose(Interval(-1, 0))
 }
