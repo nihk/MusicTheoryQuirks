@@ -1,6 +1,6 @@
 import kotlin.math.abs
 
-data class Accidental(val modifier: Int) {
+inline class Accidental(val modifier: Int) {
 
     override fun toString() = modifier.let {
         when {
