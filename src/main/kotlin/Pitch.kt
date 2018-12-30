@@ -1,6 +1,6 @@
 data class Pitch(
     val pitchClass: PitchClass,
-    val octave: Int
+    val octave: Octave
 ) : Transposable {
 
     override fun transpose(interval: Interval): Pitch {
@@ -12,15 +12,15 @@ data class Pitch(
         val appliedNormalizedIntegerDistance = fromPc.pitchLetter.integerValue + normalizedIntegerDistance
         val isEvenlyDivisible = normalizedIntegerDistance.rem(PITCH_CLASS_UNIVERSE_SIZE) == 0
 
-        val toOctave = when {
+        val toOctave: Octave = when {
             normalizedIntegerDistance < 0
                     && !isEvenlyDivisible
-                    && appliedNormalizedIntegerDistance < PitchLetter.C.integerValue -> octave - 1
+                    && appliedNormalizedIntegerDistance < PitchLetter.C.integerValue -> octave - 1u
             normalizedIntegerDistance >= 0
                     && !isEvenlyDivisible
-                    && appliedNormalizedIntegerDistance > PitchLetter.B.integerValue -> octave + 1
+                    && appliedNormalizedIntegerDistance > PitchLetter.B.integerValue -> octave + 1u
             else -> octave
-        } + normalizedIntegerDistance / PITCH_CLASS_UNIVERSE_SIZE
+        } + (normalizedIntegerDistance / PITCH_CLASS_UNIVERSE_SIZE).toUInt()
 
         return Pitch(toPc, toOctave)
     }

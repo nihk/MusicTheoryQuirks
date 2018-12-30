@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
-    Pitch(PitchClass(PitchLetter.C), 4)
+    Pitch(PitchClass(PitchLetter.C), Octave(4u))
         .toCollection(Interval.chromaticScale).forEach { pitch ->
             println("majorScale:           ${pitch.toCollection(Interval.majorScale)}")
             println("naturalMinorScale:    ${pitch.toCollection(Interval.naturalMinorScale)}")
