@@ -113,6 +113,16 @@ class PitchTest {
     }
 
     @Test
+    fun `transpose cb4 to b#3`() {
+        val cFlat4 = Pitch(PitchClass(PitchLetter.C, Accidental(-1)), Octave(4u))
+
+        val result = cFlat4.transpose(Interval(-1, 1))
+
+        val expected = Pitch(PitchClass(PitchLetter.B, Accidental(1)), Octave(3u))
+        Assert.assertEquals(expected, result)
+    }
+
+    @Test
     fun `transpose b3 up to dbbbb4`() {
         val b3 = Pitch(PitchClass(PitchLetter.B), Octave(3u))
 
